@@ -60,7 +60,7 @@ Construcción de un **grafo de conocimiento** basado en RDF con formato N-Triple
 
 ### Preguntas respondidas
 
-Las respuestas teóricas (ontologías, tipos de nodos, etc.) están en [`RESPUESTAS.md`](./RESPUESTAS.md).
+Las respuestas teóricas (ontologías, tipos de nodos, etc.) están en [`RESPUESTAS.md`](./.idea/RESPUESTAS.md).
 
 ---
 
