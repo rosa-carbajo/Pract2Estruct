@@ -5,12 +5,14 @@ public class Nodo_Arbol_Binario<T> {
     private Nodo_Arbol_Binario<T> izq;
     private Nodo_Arbol_Binario<T> drch;
 
+    //---CONSTRUCTOR---
     public Nodo_Arbol_Binario(T dato) {
         this.dato = dato;
         this.drch = null;
         this.izq = null;
     }
 
+    //----GETTERS Y SETTERS---
     public T getDato() {
         return dato;
     }
@@ -30,10 +32,11 @@ public class Nodo_Arbol_Binario<T> {
         this.izq = izq;
     }
 
+    //---GET GRADO---
     /**
      * Devuelve el grado del nodo, es decir, el número de hijos que tiene.
      * En un árbol binario el grado máximo es 2.
-     *
+     * <p>
      * @return 0 si es hoja, 1 si tiene un hijo, 2 si tiene dos hijos
      */
     public int getGrado() {
@@ -47,6 +50,8 @@ public class Nodo_Arbol_Binario<T> {
         else
             return 1;
     }
+
+    //--TO STRING---
     public String toString(){
         return dato.toString();
     }
