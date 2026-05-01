@@ -50,17 +50,8 @@ Construcción de un **grafo de conocimiento** basado en RDF con formato N-Triple
 - Permite añadir nuevas tripletas dinámicamente
 - Identifica los **tipos de nodos** del grafo
 
-### Archivos de datos incluidos
 
-| Archivo | Descripción |
-|--------|-------------|
-| `grafo_conexo.json` | Grafo completamente conectado |
-| `grafo_disjunto.json` | Grafo con componentes separadas |
-| `nobel.json` | Premios Nobel con ciudades de nacimiento |
-
-### Preguntas respondidas
-
-Las respuestas teóricas (ontologías, tipos de nodos, etc.) están en [`RESPUESTAS.md`](./.idea/RESPUESTAS.md).
+Las respuestas teóricas (ontologías, tipos de nodos, etc.) están en [`RESPUESTAS.md`](./RESPUESTAS.md).
 
 ---
 
