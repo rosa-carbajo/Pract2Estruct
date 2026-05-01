@@ -21,6 +21,10 @@ public class Lista_Simple <T>
         this.primero = null;
         this.ultimo = null;
     }
+    // Metodo necesario para obtener el inicio de la lista y poder recorrerla
+    public Nodo<T> getPrimero(){
+        return this.primero;
+    }
 
     //Añado un nodo al final
     public void anadir(T dato) {
@@ -119,4 +123,36 @@ public class Lista_Simple <T>
         }
         return null;
     }
+    public int getTamanio(){
+        int contador = 0;
+        Nodo<T> act = primero;
+        while (act != null) {
+            contador++;
+            act = act.getSiguiente();
+        }
+        return contador;
+    }
+
+    public Nodo<T> get(int posicion){
+        // 1. Validar que la posición no sea negativa
+        if (posicion < 0) {
+            return null;
+        }
+        Nodo<T> actual = primero;
+        int contador = 0;
+
+        // 2. Recorrer la lista hasta encontrar la posición o llegar al final
+        while (actual != null) {
+            if (contador == posicion) {
+                return actual; // Encontrado
+            }
+            actual = actual.getSiguiente(); // Avanzar al siguiente nodo
+            contador++;
+        }
+
+        // 3. Si salimos del bucle, la posición estaba fuera de rango
+        return null;
+
+    }
+
 }
