@@ -60,4 +60,4 @@ Las respuestas teóricas (ontologías, tipos de nodos, etc.) están en [`RESPUES
 | Nombres |  
 |-------------|
 | **Rosa Carbajo Rodríguez** |
-| **Rudy Benjamín Coarna Navarro ** |
+| **Rudy Benjamín Coarna Navarro** |
