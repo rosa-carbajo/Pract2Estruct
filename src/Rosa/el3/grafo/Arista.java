@@ -1,4 +1,4 @@
-package es.uah.matcomp.ed.el3.grafo;
+//package es.uah.matcomp.ed.el3.grafo;
 
 public class Arista<T extends Comparable<T>>{
     private Vertice<T> verticeIni;

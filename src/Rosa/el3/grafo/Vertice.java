@@ -1,8 +1,3 @@
-package es.uah.matcomp.ed.el3.grafo;
-
-import Listas.Lista_simple.Lista_Simple;
-
-
 public class Vertice<T extends Comparable<T>>{
     //todo lo comentado que tiene que ver con el ID lo he eliminado porque me parece innecesario
     // ya que pensándolo mejor no tiene sentido que en un grafo existan dos vertices iguales,
@@ -65,6 +60,24 @@ public class Vertice<T extends Comparable<T>>{
         //El usuario solo querrá saber el dato del vértice no sus aristas,
         // si quiere las aristas pedirá las aristas en su correspondiente método
         return dato.toString();
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        // 1. ¿Es exactamente el mismo objeto en memoria?
+        if (this == o) 
+            return true;
+        
+        // 2. ¿Es nulo o de una clase diferente?
+        if (o == null || getClass() != o.getClass()) 
+            return false;
+        
+        // 3. Convertimos el objeto a Vertice para comparar su interior
+        Vertice<?> other = (Vertice<?>) o;
+        
+        // 4. Comparamos el 'dato' (que es un String como "persona:Albert Einstein")
+        if (this.dato == null) return other.dato == null;
+        return this.dato.equals(other.getDato());
     }
 
 }

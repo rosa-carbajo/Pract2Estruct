@@ -1,7 +1,3 @@
-package es.uah.matcomp.ed.el3.grafo;
-
-import Listas.Lista_simple.Lista_Simple;
-
 public class Grafo_noDirigido<T extends Comparable<T>> {
     private Lista_Simple<Vertice<T>> vertices;
     private Lista_Simple<Arista<T>> aristas;
