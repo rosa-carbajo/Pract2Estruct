@@ -2,29 +2,29 @@
 ---
 ## PL2a — Árbol Binario de Búsqueda
 
-Implementación del TAD **`ArbolBinarioDeBusqueda<T>`** parametrizable con tipo genérico (`Comparable`).
+Implementación del TAD **[`ArbolBinarioDeBusqueda<T>`](src/Rosa/el2/Arbol/Arbol/ArbolBinarioDeBusqueda.java)** parametrizable con tipo genérico (`Comparable`).
 
 ### Funcionalidades
 
 | Método | Descripción |
 |--------|-------------|
-| `add(T dato)` | Inserta un elemento manteniendo el orden |
-| `getGrado()` | Grado máximo del árbol |
-| `getAltura()` | Altura del árbol |
-| `getCamino(T dato)` | Camino hasta un nodo |
-| `getListaDatosNivel(int n)` | Nodos de un nivel concreto |
-| `isArbolCompleto()` | ¿Todas las hojas al mismo nivel? |
-| `isArbolCasiCompleto()` | ¿Hojas en dos niveles contiguos desde la izquierda? |
-| `isArbolHomogeneo()` | ¿Todos los subárboles con el mismo número de hijos? |
-| `getListaPreOrden()` | Recorrido pre-orden |
-| `getListaPostOrden()` | Recorrido post-orden |
-| `getListaOrdenCentral()` | Recorrido en orden central |
-| `getSubArbolIzquierda()` | Subárbol izquierdo |
-| `getSubArbolDerecha()` | Subárbol derecho |
+|[`add(T dato)`](src/Rosa/el2/Arbol/Arbol/ArbolBinarioDeBusqueda.java#L78) | Inserta un elemento manteniendo el orden |
+|[`getGrado()`](src/Rosa/el2/Arbol/Arbol/Nodo_Arbol_Binario.java.java#L44)  | Grado máximo del árbol |
+|[`getAltura()`](src/Rosa/el2/Arbol/Arbol/ArbolBinarioDeBusqueda.java#L143) | Altura del árbol |
+|[`getCamino(T dato)`](src/Rosa/el2/Arbol/Arbol/ArbolBinarioDeBusqueda.java#L254) | Camino hasta un nodo |
+|[`getListaDatosNivel(int n)`](src/Rosa/el2/Arbol/Arbol/ArbolBinarioDeBusqueda.java#L157) | Nodos de un nivel concreto |
+|[`isArbolCompleto()`](src/Rosa/el2/Arbol/Arbol/ArbolBinarioDeBusqueda.java#L442) | ¿Todas las hojas al mismo nivel? |
+|[`isArbolCasiCompleto()`](src/Rosa/el2/Arbol/Arbol/ArbolBinarioDeBusqueda.java#L489) | ¿Hojas en dos niveles contiguos desde la izquierda? |
+|[`isArbolHomogeneo()`](src/Rosa/el2/Arbol/Arbol/ArbolBinarioDeBusqueda.java#L408) | ¿Todos los subárboles con el mismo número de hijos? |
+|[`getListaPreOrden()`](src/Rosa/el2/Arbol/Arbol/ArbolBinarioDeBusqueda.java#L371) | Recorrido pre-orden |
+|[`getListaPostOrden()`](src/Rosa/el2/Arbol/Arbol/ArbolBinarioDeBusqueda.java#L339) | Recorrido post-orden |
+|[`getListaOrdenCentral()`](src/Rosa/el2/Arbol/Arbol/ArbolBinarioDeBusqueda.java#L307)| Recorrido en orden central |
+|[`getSubArbolIzquierda()`](src/Rosa/el2/Arbol/Arbol/ArbolBinarioDeBusqueda.java#L33) | Subárbol izquierdo |
+|[`getSubArbolDerecha()`](src/Rosa/el2/Arbol/Arbol/ArbolBinarioDeBusqueda.java#L54) | Subárbol derecho |
 
 ### Subclase de ejemplo
 
-**`ArbolBinarioDeBusquedaEnteros`** — añade `getSuma():int`.
+**[`ArbolBinarioDeBusquedaEnteros`](src/Rosa/el2/Arbol/AVL/Ejercicio/ArbolBinarioDeBusquedaEnteros.java)** — añade [`getSuma():int`](src/Rosa/el2/Arbol/AVL/Ejercicio/ArbolBinarioDeBusquedaEnteros.java#L39).
 
 #### Programa de prueba 1 — Inserción ordenada (0 a 128)
 - Calcula la suma por los 3 recorridos
@@ -57,7 +57,9 @@ Las respuestas teóricas (ontologías, tipos de nodos, etc.) están en [`RESPUES
 
 ## Autores
 
-| Nombres |  
-|-------------|
-| **Rosa Carbajo Rodríguez** |
-| **Rudy Benjamín Coarna Navarro** |
+### Colaboradores
+
+| Nombres | Carpeta |
+| :--- | :--- |
+| **Rosa Carbajo Rodríguez** | [`link`](src/Rosa) |
+| **Rudy Benjamín Coarna Navarro** | [`link`](src/Rudy) |
